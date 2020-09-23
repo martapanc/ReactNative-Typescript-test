@@ -1,52 +1,13 @@
 {
-  "name": "AwesomeTSProject",
-  "version": "0.0.1",
+  "name": "awesome-ts-project",
   "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "local": "react-scripts start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
   },
   "dependencies": {
-    "babel-loader": "^8.1.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-native": "0.63.2",
-    "react-native-web": "^0.13.13",
-    "react-scripts": "^3.4.3",
-    "webpack": "^4.42.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4",
-    "@react-native-community/eslint-config": "^1.1.0",
-    "@types/jest": "^25.2.3",
-    "@types/react-native": "^0.63.2",
-    "@types/react-test-renderer": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
-    "@typescript-eslint/parser": "^2.27.0",
-    "babel-jest": "^24.9.0",
-    "eslint": "^6.5.1",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "react-test-renderer": "16.13.1",
-    "typescript": "^3.8.3",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "react-native": "0.61.3"
   }
 }
